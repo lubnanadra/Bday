@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Background hitam */
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+#countdown {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/* Cake */
+.cake-wrapper {
+    display: none;
+    animation: fadeIn 2s forwards;
+    cursor: pointer;
+}
+
+.cake-image {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#birthday-text {
+    font-size: 1.5em;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Envelope & Letter */
+.envelope-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    display: none;
+    animation: fadeIn 3s forwards;
+    background: #f8f8f8;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+.envelope {
+    position: relative;
+    background-color: #ffcccb;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.envelope .heart {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: red;
+    clip-path: polygon(50% 0%, 0% 30%, 50% 100%, 100% 30%);
+    animation: heartbeat 1s infinite;
+}
+
+.message {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 25px;
+    line-height: 1.6;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* "I love you" Section */
+.love-text {
+    font-size: 4rem;
+    color: #ff4081;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.heart {
+    color: #e57373;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.love-section {
+    text-align: center;
+    display: none;
+    padding: 50px;
+}
+
+.hidden {
+    display: none;
+}

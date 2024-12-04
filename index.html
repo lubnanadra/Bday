@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="countdown">00:00:00</div>
+
+        <div class="cake-wrapper" onclick="showEnvelope()">
+            <img src="kue.png" alt="Cake" class="cake-image">
+            <div id="birthday-text">Selamat Ulang Tahun Sayang! 🎂</div>
+        </div>
+    </div>
+
+    <!-- Envelope & Message Styling -->
+    <div class="envelope-container" id="envelope-container">
+        <div class="envelope" onclick="showPaper()">
+            <div class="heart"></div>
+            <div class="message">
+                <p>Dear Ikhlas, Selamat bertambah usia sayang❤️.</p> 
+                <p>Umur 24 bukan umur yang sedikit lohh. Didepan masih banyak tantangan yang bakal kamu hadapin, semangat yaa.</p>
+                <p>Aku berharap kamu panjang umur, sehat selalu, lancar selalu rezekinya, dan semoga disetiap langkah kamu selalu diberkahi❤️❤️</p>
+                <p>Terimakasih sudah menjalani 1 tahun bersama ini bareng aku❤️ Makasih udah mau nemenin dan nurutin aku, aku selalu berdoa semoga kamu dikasih balesan yang terbaik atas kebaikan yang kamu kasih ke aku❤️❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- "I love you" Section -->
+    <div class="section love-section hidden" id="love-section">
+        <h1 class="love-text">
+            <span>I</span> <span class="heart">❤️</span> <span>YOU</span>
+        </h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
